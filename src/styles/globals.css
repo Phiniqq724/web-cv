@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans:
+    var(--font-plus-jakarta-sans), ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --color-primary: #3a3a3a;
+  --color-secondary: #f3f3f3;
+}
+
+/* Add this to your globals.css for better smooth scrolling */
+
+/* Ensure smooth wrapper takes full height */
+#smooth-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+#smooth-content {
+  overflow: visible;
+  width: 100%;
+}
+
+/* Optional: Hide scrollbar while maintaining functionality */
+#smooth-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+#smooth-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Parallax effect classes you can use in your components */
+.parallax-slow {
+  /* Use data-speed="0.5" on elements for slow parallax */
+}
+
+.parallax-fast {
+  /* Use data-speed="1.5" on elements for fast parallax */
+}
+
+/* Smooth transitions for interactive elements */
+.smooth-hover {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.smooth-hover:hover {
+  transform: translateY(-2px);
+}
+
+/* Example usage in your components: */
+
+/*
+<div data-speed="0.8" className="parallax-element">
+  This element will move slower than the scroll
+</div>
+
+<div data-speed="1.2" className="parallax-element">
+  This element will move faster than the scroll
+</div>
+
+<img 
+  src="/image.jpg" 
+  data-speed="0.5" 
+  className="parallax-image"
+  alt="Parallax background"
+/>
+*/

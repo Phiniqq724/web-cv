@@ -2,10 +2,9 @@ import Link from "next/link";
 import Section, { Points } from "./_components/section";
 import Image from "next/image";
 import InfiniteScroll from "./_components/carousel";
-
 const profileImage = (
   <Link
-    className="outline-primary mx-auto flex h-40 w-40 items-center justify-center rounded-full outline-4 outline-dashed hover:cursor-none sm:h-52 sm:w-52 md:h-64 md:w-64"
+    className="outline-primary relative mx-auto flex h-40 w-40 items-center justify-center rounded-full outline-4 outline-dashed hover:cursor-none sm:h-52 sm:w-52 md:h-64 md:w-64"
     href="https://linktree-orpin-theta.vercel.app/"
   >
     <Image
@@ -13,7 +12,7 @@ const profileImage = (
       alt="Profile Picture"
       width={250}
       height={250}
-      className="h-full w-full rounded-full object-cover"
+      className="relative z-10 h-full w-full rounded-full object-cover"
     />
   </Link>
 );
@@ -52,12 +51,15 @@ const leftSections = [
     content: (
       <Points
         points={[
-          { title: "Web Design" },
-          { title: "Design Thinking" },
+          { title: "Software Development" },
+          { title: "REST API Integration" },
+          { title: "Fullstack Development" },
+          { title: "AWS Cloud Computing" },
+          { title: "Team Work & Collaboration" },
           { title: "Problem Solving" },
-          { title: "Strong Communication" },
-          { title: "Project Management" },
-          { title: "Full Stack Development" },
+          { title: "Critical Thinking" },
+          { title: "Creativity" },
+          { title: "Adaptability" },
         ]}
       />
     ),
@@ -95,12 +97,13 @@ const rightSections = [
     ),
     content: (
       <p className="">
-        Hello, my name is Fahrell Sandy Zhariif Widiatmoko. I am a student from
-        SMK Telkom Malang with <span className="font-medium">2 years</span>{" "}
-        experience in web and research technologies. I have learned many
-        languages frameworks such as <span className="font-medium">Nextjs</span>
-        ,<span className="font-medium"> Expo</span>,{" "}
-        <span className="font-medium">Prisma</span>, and more!
+        I am Fahrell Sandy Zhariif Widiatmoko. I am a student from SMK Telkom
+        Malang with <span className="font-medium">2 years</span> experience in
+        web and research technologies. I have learned many languages frameworks
+        such as <span className="font-medium">Nextjs</span>,
+        <span className="font-medium"> Expo</span>,{" "}
+        <span className="font-medium">Prisma</span>,{" "}
+        <span className="font-medium">Mendix</span> and more!
       </p>
     ),
   },
@@ -113,6 +116,11 @@ const rightSections = [
             title: "Lead Front-End Developer",
             content: "On Moklet Developer Organization (2024-2025)",
             link: "https://www.moklet.org/organisasi/2024-2025/METIC",
+          },
+          {
+            title: "Certified Mendix Rapid Developer",
+            content: "Low-code application development platform certification",
+            link: "/pdf/MendixRapidDeveloper-97769.pdf",
           },
           {
             title: "Create Front-End Web Application For Pilketos 2024",
@@ -179,12 +187,13 @@ const leftSectionsMobile = [
     ),
     content: (
       <p className="">
-        Hello, my name is Fahrell Sandy Zhariif Widiatmoko. I am a student from
-        SMK Telkom Malang with <span className="font-medium">2 years</span>{" "}
-        experience in web and research technologies. I have learned many
-        languages frameworks such as <span className="font-medium">Nextjs</span>
-        ,<span className="font-medium"> Expo</span>,{" "}
-        <span className="font-medium">Prisma</span>, and more!
+        I am Fahrell Sandy Zhariif Widiatmoko. I am a student from SMK Telkom
+        Malang with <span className="font-medium">2 years</span> experience in
+        web and research technologies. I have learned many languages frameworks
+        such as <span className="font-medium">Nextjs</span>,
+        <span className="font-medium"> Expo</span>,{" "}
+        <span className="font-medium">Prisma</span>,{" "}
+        <span className="font-medium">Mendix</span> and more!
       </p>
     ),
   },
@@ -217,12 +226,15 @@ const leftSectionsMobile = [
     content: (
       <Points
         points={[
-          { title: "Web Design" },
-          { title: "Design Thinking" },
+          { title: "Software Development" },
+          { title: "REST API Integration" },
+          { title: "Fullstack Development" },
+          { title: "AWS Cloud Computing" },
+          { title: "Team Work & Collaboration" },
           { title: "Problem Solving" },
-          { title: "Strong Communication" },
-          { title: "Project Management" },
-          { title: "Full Stack Development" },
+          { title: "Critical Thinking" },
+          { title: "Creativity" },
+          { title: "Adaptability" },
         ]}
       />
     ),
@@ -238,6 +250,11 @@ const rightSectionsMobile = [
             title: "Lead Front-End Developer",
             content: "On Moklet Developer Organization (2024-2025)",
             link: "https://www.moklet.org/organisasi/2024-2025/METIC",
+          },
+          {
+            title: "Certified Mendix Rapid Developer",
+            content: "Low-code application development platform certification",
+            link: "/pdf/MendixRapidDeveloper-97769.pdf",
           },
           {
             title: "Create Front-End Web Application For Pilketos 2024",
@@ -342,7 +359,7 @@ export default async function Home() {
         </div>
       </main>
       <footer className="flex w-full flex-col justify-center py-32">
-        <h1 className="text-center text-xl">Website ini Dibuat Menggunakan</h1>
+        <h1 className="text-center text-xl">This web created with</h1>
         <InfiniteScroll />
       </footer>
     </>

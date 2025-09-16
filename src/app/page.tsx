@@ -75,6 +75,12 @@ const leftSections = [
             link: "https://www.instagram.com/p/CySx_hvScVJ/",
           },
           {
+            title: "Top 27 Moklet Idea Challenge 2025",
+            content:
+              "Becoming one of the top 27 on that internal competition (Absolver)",
+            link: "https://www.instagram.com/p/DKV1HeKT6GD/?img_index=4",
+          },
+          {
             title:
               "Semifinalist of Fiksi 2024 (Festival Inovasi dan Kewirausahaan Siswa Indonesia)",
             content: "A big national competition for students in Indonesia",
@@ -313,6 +319,12 @@ const rightSectionsMobile = [
             title: "Top 10 IoT Earth Competition 2023",
             content: "Becoming one of the top 10 on that national competition",
             link: "https://www.instagram.com/p/CySx_hvScVJ/",
+          },
+          {
+            title: "Top 27 Moklet Idea Challenge 2025",
+            content:
+              "Becoming one of the top 27 on that internal competition (Absolver)",
+            link: "https://www.instagram.com/p/DKV1HeKT6GD/?img_index=4",
           },
           {
             title:
